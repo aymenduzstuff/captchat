@@ -1,0 +1,21 @@
+'''
+AFTER VERIFY SELECTION : 
+'''
+page.get_by_role("listbox", name="Visa Type*").get_by_label("select").click()
+page.get_by_role("option", name="Schengen Visa").click()
+page.get_by_role("listbox", name="Visa Sub Type*").get_by_role("option").click()
+page.locator("#VisaSubType4_listbox").get_by_role("option", name="Schengen Visa").click()
+page.get_by_role("listbox", name="Location*").get_by_role("option").click()
+page.get_by_role("option", name="Algiers").click()
+page.get_by_role("option", name="--Select--").click()
+page.get_by_role("option", name="--Select--").click()
+page.get_by_role("option", name="Normal").click()
+page.get_by_role("button", name="Submit").click()
+page.get_by_role("button", name="Ok").click()
+
+'''
+No appointement available 
+'''
+page.get_by_text("No Appointments Available")
+
+<h6 class="modal-title" id="commonModalLabel">  <span id="commonModalHeader" style="font-weight:600;" class="text-primary">No Appointments Available</span></h6>
